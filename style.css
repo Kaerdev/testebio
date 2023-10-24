@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(assets/bg-mobile.jpg); /* adicionar imagem de fundo */
+  background-repeat: no-repeat; /* colocar a imagem para nao repitir*/
+  background-position: top center; /* reposicionar o fundo */
+  background-size: cover; /* extender a imagem com o tamanho da tela */
+  /* posso colocar todos os acimas em uma unica linha
+  background: color image repeat position/size 
+  */
+}
+body {
+  font-family: "inter", sans-serif;
+  color: white;
+}
+#container {
+  width: 360px;
+  margin: 56px auto 0px;
+  padding: 0 24px;
+}
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+#profile img {
+  width: 112px;
+}
+#profile p {
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
+}
+/* links */
+ul {
+  list-style: none; /* some o ponto que aparece nos links*/
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px /* display + flex + gap criar um espaco entre os botoes */;
+}
+ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+
+  background: rgba(255, 255, 255, 0.1); /* cor de fundo da lista transparencia*/
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+
+  backdrop-filter: blur(4px); /*coloca um embassado sutil no background*/
+  -webkit-backdrop-filter: blur(4px);
+
+  text-decoration: none; /* tira a linha sublinhada*/
+  font-weight: 500;
+
+  transition: background 0.2s;
+}
+
+ul li a:hover {
+  color: white;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.05
+  ); /* cor de fundo da lista transparencia*/
+  border: 1.5px solid white;
+}
+
+ul li a:link {
+  color: white;
+}
+ul li a:visited {
+  color: white;
+}
+.icon {
+  padding-right: 8px;
+}
