@@ -84,5 +84,7 @@ ul li a:visited {
 #rodape{
   font-size: small;
   padding-top: 100px;
+  padding: auto;
+  margin: auto;
   text-align: center;
 }
