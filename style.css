@@ -81,3 +81,8 @@ ul li a:visited {
 .icon {
   padding-right: 8px;
 }
+#rodape{
+  font-size: small;
+  padding-top: 100px;
+  text-align: center;
+}
